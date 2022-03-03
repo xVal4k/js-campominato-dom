@@ -67,6 +67,25 @@ main {
     background: #0047AB;
 }
 
+.square_bomb {
+    background: red;
+}
+
+.message_alert {
+    width: 20rem;
+    height: 6rem;
+    background: tomato;
+    border-radius: 25px;
+    bottom: 4rem;
+    display: none;
+}
+
+.message_win,
+.message_lose {
+    display: none;
+}
+
+
 
 /* FOOTER */
 
