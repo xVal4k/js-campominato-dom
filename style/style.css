@@ -80,9 +80,17 @@ main {
     display: none;
 }
 
+.message_alert p {
+    display: inline-block;
+}
+
 .message_win,
 .message_lose {
     display: none;
+}
+
+.display_block {
+    display: block;
 }
 
 
