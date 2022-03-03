@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* HEADER */
+
+header .row {
+    height: 5rem;
+}
+
+header img {
+    height: 3rem;
+}
+
+header select,
+header label, 
+header img,
+header h1 {
+    vertical-align: middle;
+}
+
+header select {
+    width: 10rem;
+}
+
+header #play {
+    padding: 0 1.5rem;
+    border: solid 1px black;
+
+}
+
+
+/* MAIN */
+
+main {
+    background: #82FED5;
+    height: calc(100vh - 8rem);
+}
+
+.square_area {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px white;
+
+}
+
+.square_selected {
+    color: white;
+    background: #0047AB;
+}
+
+
+/* FOOTER */
+
+footer .row {
+    height: 3rem;
+}
+
+
