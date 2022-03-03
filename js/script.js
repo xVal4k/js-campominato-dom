@@ -16,6 +16,8 @@ function gameStart() {
     const gameResultMessage = document.querySelector(".message_win_lose");
     const pointsMessage = document.querySelector(".message_points");
 
+
+    messageAlert.classList.remove("display_block");
     let difficulty = selectDifficulty.value;
     let cells;
     let points = 0;
@@ -76,11 +78,8 @@ function gameStart() {
 
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
-  }
+}
 
-function clicked () {
-    this.classList.add("square_selected");
-};
 
 
 
