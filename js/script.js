@@ -31,9 +31,36 @@ bntPlay.addEventListener("click", function() {
 
         square.addEventListener("click", clicked);
     }
-})
 
+    
+    const arrBombNumbers = [];
+    
+    for (let i = 0; i < 16; i++) {
+        let randomNumber = getRandomNumber(1, cells);
+        while (arrBombNumbers.includes(randomNumber)) {
+            randomNumber = getRandomNumber(1, cells);
+        }
+        arrBombNumbers.push(randomNumber);  
+    }
+    
+    console.log(arrBombNumbers);
+});
+
+
+
+/* FUNCTIONS */
+
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
 
 function clicked () {
     this.classList.add("square_selected");
-}
+};
+
+
+// clicco una casella
+// se è libera diventa cobalto
+// se è un numero dell'array bombe diventa rosso
+// se è diventato rosso appare scritta HAI PERSO
+
